@@ -1,0 +1,32 @@
+#mision{
+    background-image: url('/assets/img/imagenMisionGIIRA.jpg');
+    color: white;
+    font-size: 1.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+}
+
+#vision{
+    background-image: url('/assets/img/imagenVisionGIIRA.jpg');
+    color: white;
+    font-size: 1.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    margin-bottom: 0.2em;
+}
+
+
+#objetivos .row{
+    margin-bottom: 0.2em;
+}
+
+div .container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    hr{
+        border-width: 0.2em;
+    }
+}
