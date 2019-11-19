@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { GiiraComponent } from './componentes/giira/giira.component'
+import { GiiraComponent } from './componentes/giira/giira.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { GiiraComponent } from './componentes/giira/giira.component'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule
