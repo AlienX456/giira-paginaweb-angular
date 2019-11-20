@@ -4,6 +4,7 @@
     font-size: 1.2em;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
 
@@ -18,8 +19,28 @@
 }
 
 
-#objetivos .row{
+#objetivos {
+    background-color: #dad6d5;
+    margin-bottom: 0.2em;   
+}
+
+
+#lineas{
+    background-image: url('/assets/img/imagenLineasGIIRA.jpg');
+    font-size: 1.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0.2em;
+    color: white;
+
+    ul{
+        margin-left: 5em;
+    }
+
+    h1{
+        margin-bottom: 1em;
+    }
+
 }
 
 div .container{

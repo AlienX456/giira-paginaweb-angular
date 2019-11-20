@@ -12,3 +12,4 @@ imagenMisionGIIRA2 - https://pixabay.com/es/photos/negro-tablero-tiza-huellas-es
 imagenMisionGIIRA - https://pixabay.com/es/photos/pizarra-la-pared-negro-oscuro-1846865/
 imagenObjetivosGIIRA - https://pixabay.com/es/photos/tablero-tiza-retroalimentaci%C3%B3n-3700116/
 imagenObjetivosGIIRA2 - https://pixabay.com/es/photos/papel-documento-escribir-3042645/
+imagenLineasGIIRA - https://pixabay.com/es/photos/apple-equipo-explorador-2562204/
