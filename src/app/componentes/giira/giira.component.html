@@ -9,7 +9,7 @@
                     desarrollo y niveles de confianza en plataformas Virtuales de Aprendizaje</p>
             </div>
             <div class="d-none d-md-block col-sm-5">
-                <img [@burningRocket]="onStateOne ? 'two' : 'one'" (@burningRocket.done)="onDone($event)" src="assets/img/imagenMisionGIIRA.png" alt="Cohete">
+                <img [@burningRocket]="onStateOneRocket ? 'two' : 'one'" (@burningRocket.done)="onDoneRocket($event)" src="assets/img/imagenMisionGIIRA.png" alt="Cohete">
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="d-none d-md-block col-sm-5">
-                <img src="assets/img/imagenVisionGIIRA2.png" alt="foco">
+                <img [@rotateIdea]="onStateOneIdea ? 'two' : 'one'" (@rotateIdea.done)="onDoneIdea($event)" src="assets/img/imagenVisionGIIRA2.png" alt="foco">
             </div>
             <div class="col-sm-7 col-xs-12">
                 <h2>Visión</h2>
@@ -46,13 +46,13 @@
                     en plataformas Virtuales de Aprendizaje.</p>
             </div>
             <div class="d-none d-md-block col-sm-5">
-                <img src="assets/img/imagenObjetivosGIIRA.png" alt="caritas">
+                <img [@rotateObjetives]="onStateOneObjetivesOne ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesOne($event)" src="assets/img/imagenObjetivosGIIRA.png" alt="caritas">
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="d-none d-md-block col-sm-5">
-                <img src="assets/img/imagenObjetivosGiira2.png" alt="objetivos">
+                <img [@rotateObjetives]="onStateOneObjetivesTwo ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesTwo($event)" src="assets/img/imagenObjetivosGiira2.png" alt="objetivos">
             </div>
             <div class="my-auto col-sm-7 col-xs-12">    
                 <ul>

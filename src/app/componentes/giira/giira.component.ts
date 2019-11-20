@@ -25,12 +25,41 @@ import {
         animate('0.5s')
       ])
     ]),
+
+
+    trigger('rotateIdea',[
+      state('one',style({
+        transform: 'rotate(-5deg)'
+      })),
+      state('two',style({
+        transform: 'rotate(5deg)'
+      })),
+      transition('* <=> *', [
+        animate('0.5s')
+      ])
+    ]),
+
+    trigger('rotateObjetives',[
+      state('one',style({
+        transform: 'rotate(-20deg)'
+      })),
+      state('two',style({
+        transform: 'rotate(20deg)'
+      })),
+      transition('* <=> *', [
+        animate('0.5s')
+      ])
+    ]),
+
+
     trigger('slideToPageFromLeft',[
       transition(':enter', [
         style({ transform: 'translateX(-100%)' }),
         animate('0.5s')
       ])
     ]),
+
+
     trigger('slideToPageFromRight',[
       transition(':enter', [
         style({ transform: 'translateX(100%)' }),
@@ -43,19 +72,31 @@ import {
 export class GiiraComponent implements OnInit {
 
   constructor() { }
-  onStateOne : Boolean
+  onStateOneRocket : Boolean;
+  onStateOneIdea : Boolean;
+  onStateOneObjetivesOne : Boolean;
+  onStateOneObjetivesTwo : Boolean;
 
   ngOnInit() {
-    this.onStateOne = false;
+    this.onStateOneRocket = false;
+    this.onStateOneIdea = false;
+    this.onStateOneObjetivesOne = false;
+    this.onStateOneObjetivesTwo = true;
   }
 
-  onDone($event){
-    if (this.onStateOne) {
-      this.onStateOne = false;
-    }else{
-      this.onStateOne = true;
-    }
-
+  onDoneRocket($event){
+    this.onStateOneRocket = !this.onStateOneRocket;
   }
 
+  onDoneIdea($event){
+    this.onStateOneIdea = !this.onStateOneIdea;
+  }
+
+  onDoneObjetivesOne($event){
+    this.onStateOneObjetivesOne = !this.onStateOneObjetivesOne;
+  }
+
+  onDoneObjetivesTwo($event){
+    this.onStateOneObjetivesTwo = !this.onStateOneObjetivesTwo;
+  }
 }
