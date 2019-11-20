@@ -1,49 +1,48 @@
 <!--CARUSEL DE PRESENTACIÓN-->
 
-<ngb-carousel [interval]="intervaloCarrusel">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/imagenPrincipalHomeC2.jpg" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Bienvenidos a la pagina principal</h3>
-        <p>En el siguiente menú elije el grupo de investigación sobre el que deseas consultar</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/imagenPrincipalHomeC1.jpg" alt="Random second slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Únete a la investigación</h3>
-        <p>Aplica tus habilidades en la busqueda de nuevo conocimiento.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/imagenPrincipalHomeC3.jpg" alt="Random third slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Retos</h3>
-        <p>Reta tu mente, investiga y aprende </p>
-      </div>
+  <ngb-carousel @fadein [interval]="intervaloCarrusel">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="assets/img/imagenPrincipalHomeC2.jpg" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Bienvenidos a la pagina principal</h3>
+          <p>En el siguiente menú elije el grupo de investigación sobre el que deseas consultar</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="assets/img/imagenPrincipalHomeC1.jpg" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Únete a la investigación</h3>
+          <p>Aplica tus habilidades en la busqueda de nuevo conocimiento.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img src="assets/img/imagenPrincipalHomeC3.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Retos</h3>
+          <p>Reta tu mente, investiga y aprende </p>
+        </div>
     </ng-template>
   </ngb-carousel>
-
 
 
   <!--Menú de grupos de investigación-->
 
 <div class="row" id="menu">
-    <div class="col-sm-4">
-        <a @slideToPageFromLeft class="card wow" routerLink="/giira" id="giira">
+    <div @slideToPageFromLeft class="col-sm-4">
+        <a class="card wow" routerLink="/giira" id="giira">
             <div class="card-body">
             <h5 class="card-title">GIIRA</h5>
             <p class="card-text">Grupo de Informática e Innovación de Redes Académicas</p>
             </div>
         </a>
     </div>
-    <div class="col-sm-4">
+    <div @fadein class="col-sm-4">
         <a class="card wow" href="#" id="quinoa">
             <div class="card-body">
             <h5 class="card-title">QUINOA</h5>

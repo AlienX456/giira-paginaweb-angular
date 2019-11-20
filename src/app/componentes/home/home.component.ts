@@ -7,12 +7,19 @@ import {
   transition,
 } from '@angular/animations';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 
   animations:[
+    trigger('fadein',[
+      transition(':enter', [
+        style({ opacity : '0' }),
+        animate('1s')
+      ])
+    ]),
     trigger('slideToPageFromLeft',[
       transition(':enter', [
         style({ transform: 'translateX(-100%)' }),

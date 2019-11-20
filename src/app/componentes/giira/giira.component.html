@@ -1,4 +1,4 @@
-<div id="mision">
+<div id="mision" @slideToPageFromLeft>
     <div class="container">
         <div class="row">
             <div class="col-sm-7 col-xs-12">
@@ -9,13 +9,13 @@
                     desarrollo y niveles de confianza en plataformas Virtuales de Aprendizaje</p>
             </div>
             <div class="d-none d-md-block col-sm-5">
-                <img src="assets/img/imagenMisionGIIRA.png" alt="Cohete">
+                <img [@burningRocket]="onStateOne ? 'two' : 'one'" (@burningRocket.done)="onDone($event)" src="assets/img/imagenMisionGIIRA.png" alt="Cohete">
             </div>
         </div>
     </div>
 </div>
 
-<div id="vision">
+<div id="vision" @slideToPageFromRight>
     <div class="container">
         <div class="row">
             <div class="d-none d-md-block col-sm-5">
