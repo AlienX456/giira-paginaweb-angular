@@ -7,25 +7,20 @@ import {
   transition,
 } from '@angular/animations';
 
-import { HttpClient } from '@angular/common/http';
-
-//INTERFACES
-
-import {Articulo} from 'src/app/interfaces/articulo'
-import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-giira',
-  templateUrl: './giira.component.html',
-  styleUrls: ['./giira.component.scss'],
+  selector: 'app-multimedia',
+  templateUrl: './multimedia.component.html',
+  styleUrls: ['./multimedia.component.scss'],
 
   animations:[
     trigger('burningRocket',[
       state('one',style({
-        transform: 'translate(-5px,-5px)'
+        transform: 'translate(-20px,-5px) rotate(-5deg)'
+        
       })),
       state('two',style({
-        transform: 'translate(5px,5px)'
+        transform: 'translate(20px,5px) rotate(5deg)',
       })),
       transition('* <=> *', [
         animate('0.5s')
@@ -75,9 +70,10 @@ import { Observable } from 'rxjs';
   ],
 
 })
-export class GiiraComponent implements OnInit {
+export class MultimediaComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
+
   onStateOneRocket : Boolean;
   onStateOneIdea : Boolean;
   onStateOneObjetivesOne : Boolean;
@@ -88,8 +84,6 @@ export class GiiraComponent implements OnInit {
     this.onStateOneIdea = false;
     this.onStateOneObjetivesOne = false;
     this.onStateOneObjetivesTwo = true;
-
-    console.log(this.getLocalJson().subscribe(data=>{console.log(data)},error=>{console.error(error)}))
   }
 
   onDoneRocket($event){
@@ -106,9 +100,5 @@ export class GiiraComponent implements OnInit {
 
   onDoneObjetivesTwo($event){
     this.onStateOneObjetivesTwo = !this.onStateOneObjetivesTwo;
-  }
-
-  getLocalJson(): Observable<Articulo[]>{
-    return this.http.get<Articulo[]>("assets/json/articulos.json");
   }
 }

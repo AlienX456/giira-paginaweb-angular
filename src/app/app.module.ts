@@ -11,6 +11,9 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GiiraComponent } from './componentes/giira/giira.component';
+import { MultimediaComponent } from './componentes/multimedia/multimedia.component';
+
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
@@ -19,14 +22,16 @@ import { GiiraComponent } from './componentes/giira/giira.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    GiiraComponent
+    GiiraComponent,
+    MultimediaComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

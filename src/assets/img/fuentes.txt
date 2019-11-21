@@ -13,3 +13,5 @@ imagenMisionGIIRA - https://pixabay.com/es/photos/pizarra-la-pared-negro-oscuro-
 imagenObjetivosGIIRA - https://pixabay.com/es/photos/tablero-tiza-retroalimentaci%C3%B3n-3700116/
 imagenObjetivosGIIRA2 - https://pixabay.com/es/photos/papel-documento-escribir-3042645/
 imagenLineasGIIRA - https://pixabay.com/es/photos/apple-equipo-explorador-2562204/
+
+imagenLineasGIIRA - https://pixabay.com/es/illustrations/android-logo-logo-escudo-png-marca-1749407/
