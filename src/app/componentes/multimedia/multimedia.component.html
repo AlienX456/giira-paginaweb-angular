@@ -1,0 +1,93 @@
+<div id="misionvision">
+    <div class="container">
+        <div id="mision">  
+            <div class="row" @slideToPageFromLeft>
+                <div class="col-sm-7 col-xs-12">
+                    <h2>Misión</h2>
+                    <p>El grupo tiene como misión buscar el desarrollo del conocimiento en Automatización, 
+                        Sistemas Embebidos y Robótica, además de plantear soluciones integrales que permitan
+                         mejorar los procesos  en  el  sector  industrial, y la industrialización de  los sectores agrícolas
+                          los cuales se encuentran rezagados con respecto a la industria internacional.</p>
+                </div>
+                <div class="d-none d-md-block col-sm-5">
+                    <img [@burningRocket]="onStateOneRocket ? 'two' : 'one'" (@burningRocket.done)="onDoneRocket($event)" src="assets/img/imagenMisionMulti.png" alt="Cohete">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="vision" >
+            <div class="row" @slideToPageFromRight>
+                <div class="d-none d-md-block col-sm-5">
+                    <img [@rotateIdea]="onStateOneIdea ? 'two' : 'one'" (@rotateIdea.done)="onDoneIdea($event)" src="assets/img/imagenVisionMulti.png" alt="foco">
+                </div>
+                <div class="col-sm-7 col-xs-12">
+                    <h2>Visión</h2>
+                    <p>Ser un referente a nivel nacional en temas relacionados con las líneas de investigación a través del 
+                        reconocimiento adquirido y por la calidad de sus investigaciones. El grupo será capaz de ofrecer 
+                        soluciones reales al mercado compitiendo con soluciones nacionales y extranjeras mediante propuestas 
+                        tecnologías innovadoras con apoyo de la industria y centros de investigaciones que aborden aspectos 
+                        relacionados con multimedia. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="objetivos">
+        <div class="container">
+            <div class="row">
+                <div class="my-auto col-sm-7 col-xs-12">
+                    <h2>Objetivos</h2>
+                    <p>Realizar estudios e investigaciones en multimedia interactiva sobre las áreas de simulación, computación gráfica, 
+                        interacción humano-computador, educación, entrenamiento, infraestructura, almacenamiento y computación gráfica 
+                        que conlleven a al desarrollo de formas de interacción entre el humano y el contenido multimedia, para proponer 
+                        soluciones a problemas a nivel de Colombia y el mundo.</p>
+                </div>
+                <div class="d-none d-md-block col-sm-5">
+                    <img [@rotateObjetives]="onStateOneObjetivesOne ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesOne($event)" src="assets/img/imagenObjetivosGIIRA.png" alt="caritas">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="d-none d-md-block col-sm-5">
+                    <img [@rotateObjetives]="onStateOneObjetivesTwo ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesTwo($event)" src="assets/img/imagenObjetivosGiira2.png" alt="objetivos">
+                </div>
+                <div class="my-auto col-sm-7 col-xs-12">    
+                    <ul>
+                        <li>Dar apoyo a los estudiantes que desean realizar sus trabajos de grado y tesis en el campo de la multimedia interactiva. </li>
+                        <li> Incorporar conocimientos interdisciplinares a las investigaciones realizadas por el grupo </li>
+                        <li>Generar aplicaciones basadas en los conocimientos generados en las líneas de investigación 
+                                conocimientos generados en las líneas de investigación IA y el mundo </li>
+                        <li>Motivar a los estudiantes en el campo de investigación multimedial generando nuevas propuestas a 
+                            nivel técnico, tecnológico y en el área de estudio</li>
+                        <li>Crear un laboratorio en el que se realicen investigaciones y desarrollos de las líneas de investigación propuestas</li>
+                        <li>Generar relaciones con grupos de trabajo y de investigación que puedan aportar a las investigaciones realizadas</li>
+                        <li>Realizar publicaciones y socializaciones de los resultados de las investigaciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div id="lineas">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="my-auto col-sm-7 col-xs-12">   
+                <h1>Líneas de investigación</h1> 
+                <ul>
+                    <li>Computación gráfica</li>
+                    <li>Interacción Persona Máquina-Computacional</li>
+                    <li>Realidad Aumentada y Realidad Virtual</li>
+                    <li>Simulación por computador</li>
+                    <li>Transmisión, infraestructura, almacenamiento de
+                            contenido Multimedia</li>
+                    <li>Videojuegos y entretenimiento</li>
+                    <li>Educación y entretenimiento</li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block col-sm-5">
+                <img src="assets/img/imagenLineasMulti.png" alt="lineas">
+            </div>
+        </div>
+    </div>
+</div>
+

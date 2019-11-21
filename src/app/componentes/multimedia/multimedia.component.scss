@@ -1,0 +1,51 @@
+#misionvision{
+    background-image: url('/assets/img/imagenMisionGIIRA.jpg');
+    color: white;
+    font-size: 1.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+    hr{
+        border-color: white;
+        border-width: 0.1em;
+    }
+
+}
+
+
+
+
+#objetivos {
+    background-color: #dad6d5;
+    margin-bottom: 0.2em;   
+}
+
+
+#lineas{
+    background-image: url('/assets/img/imagenLineasGIIRA.jpg');
+    font-size: 1.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+    color: black;
+
+    ul{
+        margin-left: 2em;
+    }
+
+    h1{
+        margin-bottom: 1em;
+    }
+
+}
+
+div .container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    hr{
+        border-width: 0.2em;
+    }
+}

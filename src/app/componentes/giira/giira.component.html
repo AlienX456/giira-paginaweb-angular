@@ -1,0 +1,132 @@
+<div id="misionvision">
+        <div class="container">
+            <div id="mision">  
+                <div class="row" @slideToPageFromLeft>
+                    <div class="col-sm-7 col-xs-12">
+                        <h2>Misión</h2>
+                        <p>Ser un grupo interdisciplinario para la gestión, desarrollo e integración de Herramientas 
+                            Tecnológicas sobre Redes Académicas y evaluación de contenidos digitales mediante estrategias 
+                            de modelos ontológicos y agentes inteligentes para la identificación de metodologías de 
+                            desarrollo y niveles de confianza en plataformas Virtuales de Aprendizaje</p>
+                    </div>
+                    <div class="d-none d-md-block col-sm-5">
+                        <img [@burningRocket]="onStateOneRocket ? 'two' : 'one'" (@burningRocket.done)="onDoneRocket($event)" src="assets/img/imagenMisionGIIRA.png" alt="Cohete">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="vision" >
+                <div class="row" @slideToPageFromRight>
+                    <div class="d-none d-md-block col-sm-5 center-block">
+                        <img [@rotateIdea]="onStateOneIdea ? 'two' : 'one'" (@rotateIdea.done)="onDoneIdea($event)" src="assets/img/imagenVisionGIIRA2.png" alt="foco">
+                    </div>
+                    <div class="col-sm-7 col-xs-12">
+                        <h2>Visión</h2>
+                        <p>Lograr establecer productos de Investigación interdisciplinares en líneas afines 
+                            sobre redes Académicas y vínculos de proyectos de Investigación de alto impacto
+                            a nivel tecnológico, social y Educativo. Analizar comportamiento de uso de 
+                            herramientas tecnológicas para establecer modelos de educación y comunicación
+                            adecuados en instituciones académicas. Definir estrategias de análisis de datos
+                            a gran escala y su vinculación con recursos relevantes sobre Internet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="objetivos">
+    <div class="container">
+        <div class="row">
+            <div class="my-auto col-sm-7 col-xs-12">
+                <h2>Objetivos</h2>
+                <p>Ser un grupo interdisciplinario para la gestión, desarrollo e integración de 
+                    Herramientas Tecnológicas sobre Redes Académicas y evaluación de contenidos 
+                    digitales mediante estrategias de modelos ontológicos y agentes inteligentes 
+                    para la identificación de metodologías de desarrollo y niveles de confianza 
+                    en plataformas Virtuales de Aprendizaje.</p>
+            </div>
+            <div class="d-none d-md-block col-sm-5">
+                <img [@rotateObjetives]="onStateOneObjetivesOne ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesOne($event)" src="assets/img/imagenObjetivosGIIRA.png" alt="caritas">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="d-none d-md-block col-sm-5">
+                <img [@rotateObjetives]="onStateOneObjetivesTwo ? 'one' : 'two'" (@rotateObjetives.done)="onDoneObjetivesTwo($event)" src="assets/img/imagenObjetivosGiira2.png" alt="objetivos">
+            </div>
+            <div class="my-auto col-sm-7 col-xs-12">    
+                <ul>
+                    <li>Mantener una línea de producción académica 
+                    estable en nuestras áreas de investigación </li>
+                    <li>Aplicar a proyectos de investigación de base tecnológica 
+                        y análisis de datos científicos </li>
+                    <li>Plantear modelos de comunicación para proyectos TICs en 
+                        Educación sobre institutos académicos  </li>
+                    <li>Desarrollar modelos de implementación e integración de 
+                        servicios adecuados a sector académico y empresarial </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="lineas">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="my-auto col-sm-7 col-xs-12">   
+                <h1>Líneas de investigación</h1> 
+                <ul>
+                    <li>Biotecnología</li>
+                    <li>Ciencias de la Web</li>
+                    <li>E-learning</li>
+                    <li>Redes y Seguridad Informática</li>
+                    <li>Social Network Analytics</li>
+                    <li>Visualización de información</li>
+                    <li>Web Semántica</li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block col-sm-5">
+                <img src="assets/img/imagenLineasGIIRA.png" alt="lineas">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="articulos">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVmn-mz3JgyJuv9gltvhmgZCH35sylPhkYF_OxZSpGmQw1mawtrSXgsx3kSkL1QaeVtDfYsRMMSEtF/pubhtml?gid=1767515330&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+</div>
+<!--
+<div id="tablaArticulos">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+-->
