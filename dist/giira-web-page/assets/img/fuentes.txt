@@ -1,0 +1,17 @@
+imagenPrincipalC1 - https://pixabay.com/es/photos/robot-mujer-la-cara-llorar-triste-3010309/
+imagenPrincipalC2 - https://pixabay.com/es/photos/equipo-c%C3%B3digo-de-computadora-1209641/
+imagenPrincipalC3 - https://pixabay.com/es/photos/conocimiento-libro-la-colecci%C3%B3n-de-1052010/
+
+imagenMenuGIIRAHome - https://pixabay.com/es/illustrations/astronauta-ingr%C3%A1vido-espacio-1784245/
+imagenMenuQUINOAHome - https://pixabay.com/es/photos/la-colecci%C3%B3n-de-los-libros-869061/
+imagenMenuGITUDHome - https://pixabay.com/es/photos/red-redes-cuerda-conexi%C3%B3n-neta-1246209/
+
+
+imagenVisionGIIRA2 - https://pixabay.com/es/vectors/spyglass-binoculares-punto-de-vista-158156/
+imagenMisionGIIRA2 - https://pixabay.com/es/photos/negro-tablero-tiza-huellas-escuela-1072366/
+imagenMisionGIIRA - https://pixabay.com/es/photos/pizarra-la-pared-negro-oscuro-1846865/
+imagenObjetivosGIIRA - https://pixabay.com/es/photos/tablero-tiza-retroalimentaci%C3%B3n-3700116/
+imagenObjetivosGIIRA2 - https://pixabay.com/es/photos/papel-documento-escribir-3042645/
+imagenLineasGIIRA - https://pixabay.com/es/photos/apple-equipo-explorador-2562204/
+
+imagenLineasGIIRA - https://pixabay.com/es/illustrations/android-logo-logo-escudo-png-marca-1749407/
