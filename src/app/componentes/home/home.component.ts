@@ -40,7 +40,7 @@ import {
 
 export class HomeComponent implements OnInit {
 
-  private intervaloCarrusel: Number;
+  public intervaloCarrusel: Number;
 
   constructor() { 
     this.intervaloCarrusel = 4000;
