@@ -5,6 +5,7 @@ import {
   style,
   animate,
   transition,
+  stagger,
 } from '@angular/animations';
 
 import { HttpClient } from '@angular/common/http';
@@ -32,6 +33,20 @@ import { Observable } from 'rxjs';
       ])
     ]),
 
+    trigger('lines',[
+      state('one',style({
+        transform: 'rotate(360deg) scale(0.2)'
+      })),
+      state('two',style({
+        transform: 'rotate(0deg) scale(1)'
+      })),
+      transition('one => two', [
+          animate('0.5s')
+      ]),
+      transition('two => one', [
+        animate('0.5s 500ms')
+      ])
+    ]),
 
     trigger('rotateIdea',[
       state('one',style({
@@ -82,12 +97,14 @@ export class GiiraComponent implements OnInit {
   onStateOneIdea : Boolean;
   onStateOneObjetivesOne : Boolean;
   onStateOneObjetivesTwo : Boolean;
+  onStateLines:Boolean;
 
   ngOnInit() {
     this.onStateOneRocket = false;
     this.onStateOneIdea = false;
     this.onStateOneObjetivesOne = false;
     this.onStateOneObjetivesTwo = true;
+    this.onStateLines = true;
 
     console.log(this.getLocalJson().subscribe(data=>{console.log(data)},error=>{console.error(error)}))
   }
@@ -106,6 +123,10 @@ export class GiiraComponent implements OnInit {
 
   onDoneObjetivesTwo($event){
     this.onStateOneObjetivesTwo = !this.onStateOneObjetivesTwo;
+  }
+
+  onDoneLines($event){
+    this.onStateLines = !this.onStateLines;
   }
 
   getLocalJson(): Observable<Articulo[]>{

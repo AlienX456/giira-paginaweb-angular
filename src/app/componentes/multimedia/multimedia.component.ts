@@ -27,6 +27,21 @@ import {
       ])
     ]),
 
+    trigger('lines',[
+      state('one',style({
+        transform: 'rotate(360deg) scale(0.2)'
+      })),
+      state('two',style({
+        transform: 'rotate(0deg) scale(1)'
+      })),
+      transition('one => two', [
+          animate('0.5s')
+      ]),
+      transition('two => one', [
+        animate('0.5s 500ms')
+      ])
+    ]),
+
 
     trigger('rotateIdea',[
       state('one',style({
@@ -78,12 +93,14 @@ export class MultimediaComponent implements OnInit {
   onStateOneIdea : Boolean;
   onStateOneObjetivesOne : Boolean;
   onStateOneObjetivesTwo : Boolean;
+  onStateLines:Boolean;
 
   ngOnInit() {
     this.onStateOneRocket = false;
     this.onStateOneIdea = false;
     this.onStateOneObjetivesOne = false;
     this.onStateOneObjetivesTwo = true;
+    this.onStateLines=true;
   }
 
   onDoneRocket($event){
@@ -96,6 +113,10 @@ export class MultimediaComponent implements OnInit {
 
   onDoneObjetivesOne($event){
     this.onStateOneObjetivesOne = !this.onStateOneObjetivesOne;
+  }
+
+  onDoneLines($event){
+    this.onStateLines = !this.onStateLines;
   }
 
   onDoneObjetivesTwo($event){

@@ -85,7 +85,7 @@
                 </ul>
             </div>
             <div class="d-none d-md-block col-sm-5">
-                <img src="assets/img/imagenLineasMulti.png" alt="lineas">
+                <img src="assets/img/imagenLineasMulti.png" [@lines]="onStateLines ? 'one' : 'two'" (@lines.done)="onDoneLines($event)" alt="lineas">
             </div>
         </div>
     </div>

@@ -21,11 +21,10 @@
 
 
 #lineas{
-    background-image: url('/assets/img/imagenLineasGIIRA.jpg');
+    background-color: #dad6d5;
     font-size: 1.2em;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: black;
+    margin-bottom: 0.2em;
 
     ul{
         margin-left: 5em;
@@ -47,12 +46,20 @@ div .container{
 }
 
 #articulos{
-    background-image: url('/assets/img/imagenLineasGIIRA.jpg');
+    background-image: url('/assets/img/imagenLineasGIIRAB.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin-bottom: 0.2em;
 }
 
 iframe{
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     min-height: 500px;
+    border-radius: 5px;
+    font-size: 0.5em;
+    
 }
